@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Eat — Корзина</title>
+
+    <meta name="keywords" content="корзина, заказ еды, доставка, пицца, суши">
+    <meta name="description" content="Ваша корзина заказов в Delivery Eat. Проверьте блюда и оформите доставку.">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+    <h1 class="header__title">Delivery Eat</h1>
+</header>
+
+<nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html"    class="navigation__link">Главная</a></li>
+        <li class="navigation__item"><a href="catalog.html"  class="navigation__link">Каталог</a></li>
+        <li class="navigation__item"><a href="basket.html"     class="navigation__link">Корзина</a></li>
+        <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+    </ul>
+</nav>
+
+<main class="main">
+    <h2 class="main__catalog">Ваша корзина</h2>
+    <div class="basket-empty" id="basket-empty">
+        <p class="basket-empty__text">Ваша корзина пуста.</p>
+        <p><a href="catalog.html" class="btn btn-primary">Перейти в каталог</a></p>
+    </div>
+
+    <section class="basket-items" id="basket-items" style="display: none;">
+        <div class="basket-item">
+            <img src="/img/scale_1200.jpg" alt="Пицца Маргарита" class="basket-item__img">
+            <div class="basket-item__info">
+                <h3 class="basket-item__title">Пицца Маргарита</h3>
+                <p class="basket-item__details">400 гр • Мука, томаты, моцарелла</p>
+            </div>
+            <div class="basket-item__price">550 руб</div>
+            <button class="btn-remove">×</button>
+        </div>
+
+        <div class="basket-item">
+            <img src="/img/t6bGXcKRWEY.jpg" alt="Сет №4" class="basket-item__img">
+            <div class="basket-item__info">
+                <h3 class="basket-item__title">Сет №4 <span class="badge">Акция!</span></h3>
+                <p class="basket-item__details">890 гр • 3 ролла</p>
+            </div>
+            <div class="basket-item__price"><del>1100 руб</del> <strong>950 руб</strong></div>
+            <button class="btn-remove">×</button>
+        </div>
+
+        <div class="basket-summary">
+            <p class="basket-summary__text">Итого:</p>
+            <p class="basket-summary__total">1500 руб</p>
+        </div>
+
+        <div class="basket-actions">
+            <button class="btn btn-success">Оформить заказ</button>
+            <button class="btn btn-outline">Очистить корзину</button>
+        </div>
+    </section>
+
+</main>
+
+<footer class="foother" id="page-stats">
+    <p class="foother__text">© 2025 Delivery Eat. Все права защищены.</p>
+</footer>
+</body>
+</html>

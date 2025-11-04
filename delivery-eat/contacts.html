@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Eat — Контакты</title>
+
+    <meta name="keywords" content="контакты, доставка еды, телефон, email, адрес">
+    <meta name="description" content="Свяжитесь с нами: телефон, email, адрес. Delivery Eat — быстрая доставка еды.">
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+<header class="header">
+    <h1 class="header__title">Delivery Eat</h1>
+</header>
+
+<nav class="navigation">
+    <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html"    class="navigation__link">Главная</a></li>
+        <li class="navigation__item"><a href="catalog.html"  class="navigation__link">Каталог</a></li>
+        <li class="navigation__item"><a href="basket.html"     class="navigation__link">Корзина</a></li>
+        <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+    </ul>
+</nav>
+
+<main class="main">
+    <h2 class="main__catalog">Свяжитесь с нами</h2>
+    <section class="contacts">
+        <div class="contact-card">
+            <div class="contact-card__icon">✉️</div>
+            <div class="contact-card__info">
+                <h3 class="contact-card__title">Email</h3>
+                <p class="contact-card__value">
+                    <a href="mailto:Deliveryeat@yandex.ru" class="contact-link">Deliveryeat@yandex.ru</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-card__icon">📞</div>
+            <div class="contact-card__info">
+                <h3 class="contact-card__title">Телефон</h3>
+                <p class="contact-card__value">
+                    <a href="tel:+79999999999" class="contact-link">+7 (999) 999-99-99</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-card__icon">📍</div>
+            <div class="contact-card__info">
+                <h3 class="contact-card__title">Адрес</h3>
+                <p class="contact-card__value">Ул. Вкусная, д. 1, г. Санкт-Петербург</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-card__icon">⏰</div>
+            <div class="contact-card__info">
+                <h3 class="contact-card__title">Часы работы</h3>
+                <p class="contact-card__value">Ежедневно с 10:00 до 23:00</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="map-placeholder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403389.9635350326!2d29.604115185842186!3d59.956775793435376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2sde!4v1762274382163!5m2!1sru!2sde" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section class="contact-form-section">
+        <h3 class="contact-form-section__title">Напишите нам</h3>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" rows="5" placeholder="Ваш вопрос или пожелание..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">Отправить</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="foother" id="page-stats">
+    <p class="foother__text">© 2025 Delivery Eat. Все права защищены.</p>
+</footer>
+</body>
+</html>
